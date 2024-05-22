@@ -59,10 +59,11 @@ p {
 	margin: 15px 5px 0 5px;
 	margin-top: 15px;
 	justify-content: space-between;
-	font-size: 14px;
+	font-size: 12px;
 }
 
 button {
+	all: unset;
 	font-size: 16px;
 	background-color: rgba(255, 255, 255, 0.2);
 	color: #fff;
@@ -70,10 +71,22 @@ button {
 	border-radius: 5px;
 	cursor: pointer;
 	transition: all 250ms;
-	padding: 10px;
+	padding: 12px;
 }
 
 button:hover {
 	background-color: rgba(0, 255, 255, 0.3);
 	border-color: rgba(255, 255, 255, 0.7);
+}
+
+.bar {
+	width: 100%;
+	margin-top: 8px;
+}
+
+.bar-progress {
+	height: 2px;
+	background-color: rgba(0, 255, 255, 0.3);
+	border-radius: 5px;
+	transition: all 1750ms linear;
 }

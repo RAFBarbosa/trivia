@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import Logo from "./components/Logo";
+import ProgressBar from "./components/ProgressBar";
 import "./App.css";
 // import gsap from "gsap";
 // import { useGSAP } from "@gsap/react";
@@ -29,7 +30,6 @@ export default function TriviaGame() {
 			setScore(0);
 			setGameOver(false);
 			setGameStarted(false);
-			console.log(data);
 		} catch (error) {
 			console.error("Error fetching questions:", error);
 		}
@@ -116,6 +116,7 @@ export default function TriviaGame() {
 						{questions.length}
 					</div>
 				</div>
+				<ProgressBar start={false} />
 			</div>
 		);
 	};
